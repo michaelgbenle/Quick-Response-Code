@@ -1,6 +1,9 @@
 package main
 
-import "os"
+import (
+	"io/ioutil"
+	"os"
+)
 
 func main() {
 	msg, err := os.Open("myFile.txt")
@@ -8,5 +11,6 @@ func main() {
 		panic(err)
 	}
 	defer msg.Close()
+	message, err := ioutil.ReadAll()
 
 }
