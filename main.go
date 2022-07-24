@@ -11,6 +11,6 @@ func main() {
 		panic(err)
 	}
 	defer msg.Close()
-	message, err := ioutil.ReadAll()
+	message, err := ioutil.ReadAll("msg")
 
 }
