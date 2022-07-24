@@ -19,6 +19,6 @@ func main() {
 
 	myQr := "myQr.png"
 
-	err = qrcode.writeFile(message, qrcode.Medium,512,)
+	err = qrcode.writeFile(message, qrcode.Medium,512,myQr)
 
 }
