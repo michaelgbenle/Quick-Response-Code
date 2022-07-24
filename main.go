@@ -21,7 +21,7 @@ func main() {
 
 	err = qrcode.writeFile(message, qrcode.Medium,512,myQr)
 	if err != nil {
-		
+		panic(err)
 	}
 
 }
