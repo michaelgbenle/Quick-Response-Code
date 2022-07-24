@@ -17,6 +17,6 @@ func main() {
 	}
 	message := string(byteMessage)
 
-	myQr := ""
+	myQr := "myQr.png"
 
 }
