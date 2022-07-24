@@ -3,5 +3,9 @@ package main
 import "os"
 
 func main() {
-	file, err := os.Open("myFile.txt")
+	message, err := os.Open("myFile.txt")
+	if err != nil{
+		panic(err)
+	}
+
 }
