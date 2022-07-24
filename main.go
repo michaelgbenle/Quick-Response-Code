@@ -11,9 +11,11 @@ func main() {
 		panic(err)
 	}
 	defer msg.Close()
-	message, err := ioutil.ReadAll(msg)
+	byteMessage, err := ioutil.ReadAll(msg)
 	if err != nil {
 		panic(err)
 	}
+
+
 
 }
